@@ -1,0 +1,21 @@
+.full-width {
+  width: 100%;
+}
+
+.height-auto {
+  height: auto !important;
+}
+
+.margin-bottom {
+  margin-bottom: 24px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-spacer {
+  flex-grow: 1;
+}

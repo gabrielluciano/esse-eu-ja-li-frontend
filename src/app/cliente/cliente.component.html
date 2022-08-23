@@ -1,0 +1,14 @@
+
+<div style="padding: 16px;" *ngIf="cliente">
+  <h1>Página do Cliente</h1>
+  <h3>Cliente: {{ cliente.nome }}</h3>
+  <h3>Login: {{ cliente.usuario }}</h3>
+  <h3>Pontuação Total: {{ pontuacao }}</h3>
+
+  <mat-list>
+    <h2>Troféus adquiridos</h2>
+    <mat-list-item *ngFor="let trofeu of trofeus">
+      Leitor de {{ trofeu }}
+    </mat-list-item>
+  </mat-list>
+</div>

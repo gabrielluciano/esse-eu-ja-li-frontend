@@ -1,0 +1,18 @@
+.titulo-aplicacao {
+  font-weight: 500;
+}
+
+.titulo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.flex-menu {
+  display: flex;
+}
+
+.flex-menu-spacer {
+  flex-grow: 1;
+}

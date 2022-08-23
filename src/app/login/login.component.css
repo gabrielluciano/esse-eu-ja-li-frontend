@@ -1,0 +1,15 @@
+.login-card {
+  max-width: 500px;
+  margin: 32px auto 0;
+  padding-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-actions {
+  margin-right: 0;
+  text-align: end;
+}

@@ -1,0 +1,13 @@
+<mat-list>
+  <h1 style="padding: 16px;">Lista de Livros</h1>
+  <mat-list-item *ngFor="let livro of livros" class="full-width height-auto margin-bottom">
+    <mat-card class="full-width flex">
+      Nome: {{ livro.nome }} |
+      Autor: {{ livro.autor }}
+      <span class="flex-spacer"></span>
+      <button mat-raised-button color="primary" type="button" (click)="onClickLivro(livro.id)">
+        Ver livro
+      </button>
+    </mat-card>
+  </mat-list-item>
+</mat-list>

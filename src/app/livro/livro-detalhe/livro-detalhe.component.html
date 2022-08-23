@@ -1,0 +1,17 @@
+<div class="livro-detalhe" *ngIf="livro">
+  <h1>Livro: {{ livro.nome }}</h1>
+  <div>Autor: {{ livro.autor }}</div>
+  <div>Número de páginas: {{ livro.paginas }}</div>
+  <div>Categoria: {{ livro.categoria.nome }}</div>
+  <div style="margin-top: 20px">
+    <h3 *ngIf="livroLido">Você já leu este livro!</h3>
+    <button
+      *ngIf="!livroLido && cliente && livro"
+      mat-raised-button
+      color="primary"
+      (click)="onClickLido()"
+    >
+      Marcar como lido
+    </button>
+  </div>
+</div>
